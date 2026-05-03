@@ -1,7 +1,7 @@
 export const personal = {
   name: 'Yaser Abumuamar',
   role: 'Software Engineer',
-  roles: ['Software Engineer', 'Full-Stack Developer', 'Security Researcher', 'CS Student @ TCD'],
+  roles: ['Software Engineer', 'CS Student @ TCD'],
   location: 'Dublin, Ireland',
   email: 'mummery@tcd.ie',
   phone: '+353830163868',
