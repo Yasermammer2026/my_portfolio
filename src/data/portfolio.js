@@ -12,7 +12,7 @@ export const personal = {
 studies completed in Gaza. After relocating to Ireland, I transferred to Trinity College Dublin
 and was accepted directly into Year 3 of the Computer Science programme. I am committed to
 building strong technical skills and developing my career in Ireland's technology industry.`,
-  image: '/image/home.png',
+  image: `${import.meta.env.BASE_URL}image/home.png`,
 }
 
 export const skills = [
