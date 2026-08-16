@@ -11,8 +11,19 @@ const highlights = [
       </svg>
     ),
     title: 'Trinity College Dublin',
-    subtitle: 'B.A. Computer Science, Year 3',
+    subtitle: 'B.A. Computer Science, Year 4',
     color: '#00abf0',
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+              d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+    ),
+    title: 'ML Engineer Intern',
+    subtitle: 'Ubotica · Edge AI & Anomaly Detection',
+    color: '#f97316',
   },
   {
     icon: (
@@ -33,7 +44,7 @@ const highlights = [
       </svg>
     ),
     title: 'Full-Stack Development',
-    subtitle: 'Python, JavaScript, SQL',
+    subtitle: 'Python, SQL, REST APIs',
     color: '#10b981',
   },
   {
@@ -132,7 +143,7 @@ export default function About() {
                 </svg>
                 <div>
                   <div className="text-sm font-semibold text-white">Dublin, Ireland</div>
-                  <div className="text-xs text-slate-400">From Gaza, Palestine</div>
+                  <div className="text-xs text-slate-400">From Palestine</div>
                 </div>
               </div>
             </motion.div>

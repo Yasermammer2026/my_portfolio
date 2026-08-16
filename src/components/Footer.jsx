@@ -17,7 +17,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="text-2xl font-black gradient-text mb-1">YA.</div>
-            <p className="text-xs text-slate-500">Software Engineer · Dublin, Ireland</p>
+            <p className="text-xs text-slate-500">ML Engineer · Dublin, Ireland</p>
           </motion.div>
 
           {/* Nav links */}

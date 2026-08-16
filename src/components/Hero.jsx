@@ -84,7 +84,7 @@ export default function Hero() {
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full
                                bg-accent/10 border border-accent/25 text-accent text-sm font-medium mb-6">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                Software Engineer · Dublin, Ireland
+                ML Engineer · Dublin, Ireland
               </span>
             </motion.div>
 
@@ -107,8 +107,8 @@ export default function Hero() {
 
             <motion.p variants={itemVariants} className="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
               Computer Science student at{' '}
-              <span className="text-white font-medium">Trinity College Dublin</span>, building
-              secure systems, elegant interfaces, and meaningful software.
+              <span className="text-white font-medium">Trinity College Dublin</span>, with
+              hands-on experience in machine learning, embedded systems, and Edge AI.
             </motion.p>
 
             {/* Buttons */}
@@ -132,8 +132,7 @@ export default function Hero() {
             {/* Stats */}
             <motion.div variants={itemVariants} className="flex gap-8">
               {[
-                { val: '3+',   label: 'Years Study' },
-                { val: '3',    label: 'Projects' },
+                { val: '4+',   label: 'Years Study' },
                 { val: 'TCD',  label: 'University' },
               ].map(stat => (
                 <div key={stat.label}>
@@ -201,7 +200,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-semibold text-white">📍 Dublin, Ireland</span>
                 </div>
-                <div className="text-xs text-slate-400 mt-0.5">From Gaza, Palestine</div>
+                <div className="text-xs text-slate-400 mt-0.5">From Palestine</div>
               </motion.div>
             </div>
           </motion.div>

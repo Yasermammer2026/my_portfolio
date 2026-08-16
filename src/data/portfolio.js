@@ -1,50 +1,48 @@
 export const personal = {
   name: 'Yaser Abumuamar',
-  role: 'Software Engineer',
-  roles: ['Software Engineer', 'CS Student @ TCD'],
+  role: 'ML Engineer',
+  roles: ['ML Engineer', 'Software Engineer', 'CS Student @ TCD'],
   location: 'Dublin, Ireland',
   email: 'mummery@tcd.ie',
   phone: '+353830163868',
   linkedin: 'https://linkedin.com/in/yasser-muammar',
   github: 'https://github.com/Yasermammer2026',
   gitlab: 'https://gitlab.scss.tcd.ie/mummery',
-  bio: `Motivated Computer Science student from Palestine with three years of software engineering
-studies completed in Gaza. After relocating to Ireland, I transferred to Trinity College Dublin
-and was accepted directly into Year 3 of the Computer Science programme. I am committed to
-building strong technical skills and developing my career in Ireland's technology industry.`,
+  bio: `Computer Science student at Trinity College Dublin with a background in software engineering
+and practical experience in embedded systems, machine learning, and Edge AI through academic and
+internship projects. I've worked with sensor data and anomaly detection on resource-constrained
+hardware, and I have a growing personal interest in developing AI-driven trading systems for forex
+and cryptocurrency markets.`,
   image: `${import.meta.env.BASE_URL}image/home.png`,
 }
 
 export const skills = [
   {
-    category: 'Languages & Web',
+    category: 'Programming',
     icon: '💻',
     items: [
-      { name: 'Python',     proficiency: 'Advanced',     color: '#3776ab' },
-      { name: 'JavaScript', proficiency: 'Intermediate', color: '#f7df1e' },
-      { name: 'HTML',       proficiency: 'Advanced',     color: '#e34f26' },
-      { name: 'CSS',        proficiency: 'Advanced',     color: '#1572b6' },
-      { name: 'SQL',        proficiency: 'Expert',       color: '#00758f' },
+      { name: 'Python',      proficiency: 'Advanced', color: '#3776ab' },
+      { name: 'SQL',         proficiency: 'Expert',   color: '#00758f' },
+      { name: 'HTML & CSS',  proficiency: 'Advanced', color: '#e34f26' },
     ],
   },
   {
-    category: 'Tools & Platforms',
-    icon: '🛠️',
+    category: 'ML & Data',
+    icon: '🧠',
     items: [
-      { name: 'Git',     proficiency: 'Expert', color: '#f05032' },
-      { name: 'GitHub',  proficiency: 'Expert', color: '#ffffff' },
-      { name: 'GitLab',  proficiency: 'Expert', color: '#fc6d26' },
+      { name: 'Machine Learning',  proficiency: 'Intermediate', color: '#ff6f00' },
+      { name: 'Data Analysis',     proficiency: 'Advanced',     color: '#4dabcf' },
+      { name: 'Signal Processing', proficiency: 'Intermediate', color: '#f59e0b' },
+      { name: 'Edge AI / TinyML',  proficiency: 'Intermediate', color: '#00abf0' },
     ],
   },
   {
-    category: 'Practices',
+    category: 'Software Engineering',
     icon: '⚙️',
     items: [
-      { name: 'DevOps',           proficiency: 'Intermediate', color: '#00abf0' },
-      { name: 'Agile / Scrum',    proficiency: 'Expert',   color: '#7c3aed' },
-      { name: 'Database Design',  proficiency: 'Advanced', color: '#10b981' },
-      { name: 'Security Testing', proficiency: 'Intermediate', color: '#ef4444' },
-      { name: 'RESTful APIs',     proficiency: 'Intermediate', color: '#f59e0b' },
+      { name: 'REST APIs',       proficiency: 'Advanced', color: '#f59e0b' },
+      { name: 'Database Design', proficiency: 'Advanced', color: '#10b981' },
+      { name: 'Git & GitHub',    proficiency: 'Expert',   color: '#f05032' },
     ],
   },
 ]
@@ -62,7 +60,7 @@ export const projects = [
     accent: '#00abf0',
     status: 'Completed',
     year: '2026',
-    links: { github: '#' },
+    links: { github: 'https://github.com/Yasermammer2026/mcp-context-forge' },
   },
   {
     id: 2,
@@ -76,7 +74,7 @@ export const projects = [
     accent: '#10b981',
     status: 'Completed',
     year: '2025',
-    links: { github: '#' },
+    links: { github: 'https://gitlab.scss.tcd.ie/mummery' },
   },
   {
     id: 3,
@@ -90,17 +88,34 @@ export const projects = [
     accent: '#7c3aed',
     status: 'Completed',
     year: '2025',
-    links: { github: 'https://github.com/Yasermammer2026' },
+    links: { github: 'https://github.com/Yasermammer2026/SecureChat-Blockchain' },
   },
 ]
 
 export const experience = [
   {
     id: 1,
+    title: 'ML Engineer Intern',
+    company: 'Ubotica Technologies',
+    type: 'Summer Internship',
+    period: 'June 2026 – August 2026',
+    location: 'Dublin, Ireland',
+    description: [
+      'Collected sensor data (vibration, acoustic, environmental) from STM32 embedded hardware for predictive maintenance applications.',
+      'Implemented wireless data transmission over RS-485 and Wi-Fi on resource-constrained embedded hardware for real-time data delivery.',
+      'Engineered input features from raw sensor data to train an autoencoder-based anomaly detection model.',
+      'Deployed the trained model on edge hardware for real-time anomaly detection without reliance on centralised data centres.',
+      'Investigated Wi-Fi throughput, sensor data rates, compression, and MQTT communication to identify pipeline bottlenecks.',
+    ],
+    tags: ['ML', 'Edge AI', 'STM32', 'Anomaly Detection'],
+    color: '#f97316',
+  },
+  {
+    id: 2,
     title: 'MCP AI Servers Project',
     company: 'IBM & Trinity College Dublin',
     type: 'College Project',
-    period: '2026 – Present',
+    period: 'Jan 2026 – Apr 2026',
     location: 'Dublin, Ireland',
     description: [
       'Collaborating with IBM on MCP (Model Context Protocol) AI server security research.',
@@ -111,7 +126,7 @@ export const experience = [
     color: '#00abf0',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Back-End Developer',
     company: 'Trinity College Dublin',
     type: 'Expense Tracking System',
@@ -126,7 +141,7 @@ export const experience = [
     color: '#10b981',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Web Developer (Front-End Intern)',
     company: 'Gaza Sky Geeks',
     type: 'Internship',
@@ -149,7 +164,7 @@ export const education = [
     institution: 'Trinity College Dublin',
     period: '2025 – 2027 (Expected)',
     location: 'Dublin, Ireland',
-    detail: 'Accepted directly into Junior Sophister (Year 3) based on studies completed in Gaza. Currently completing third year; expected graduation 2027.',
+    detail: 'Accepted directly into Junior Sophister (Year 3) based on studies completed in Palestine. Completed third year and entering fourth year, with expected graduation in 2027.',
     icon: '🎓',
     color: '#00abf0',
   },
@@ -158,7 +173,7 @@ export const education = [
     degree: 'Software Engineering, 3 Years',
     institution: 'University of Palestine',
     period: '2020 – 2023',
-    location: 'Gaza, Palestine',
+    location: 'Palestine',
     detail: 'Completed advanced coursework in Object-Oriented Programming, Data Structures, and Databases.',
     icon: '📚',
     color: '#7c3aed',

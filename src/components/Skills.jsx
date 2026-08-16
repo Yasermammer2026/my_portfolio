@@ -16,7 +16,7 @@ export default function Skills() {
           subtitle="Technologies and tools I work with"
         />
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {skills.map((group, gi) => (
             <motion.div
               key={group.category}
@@ -26,14 +26,14 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: gi * 0.1 }}
             >
               {/* Category header */}
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">{group.icon}</span>
                 <h3 className="text-lg font-bold text-white">{group.category}</h3>
                 <div className="flex-1 h-px bg-white/10" />
               </div>
 
-              {/* Skill grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {/* Skill chips */}
+              <div className="flex flex-wrap gap-3">
                 {group.items.map((skill, si) => (
                   <SkillBadge
                     key={skill.name}
@@ -55,10 +55,10 @@ export default function Skills() {
           className="mt-12 glass rounded-2xl p-8 border border-white/8"
         >
           <p className="text-center text-sm text-slate-500 mb-5 uppercase tracking-widest font-medium">
-            Also familiar with
+            Familiar with
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['OOP', 'Data Structures', 'Algorithms', 'Linux', 'Bash', 'VS Code', 'Postman', 'Docker basics'].map(t => (
+            {['TensorFlow', 'NumPy', 'Pandas', 'MQTT', 'RS-485', 'GitLab', 'OOP', 'Data Structures', 'ML Algorithms'].map(t => (
               <span
                 key={t}
                 className="px-3 py-1.5 rounded-lg glass text-sm text-slate-400 border border-white/10
