@@ -58,7 +58,7 @@ export default function Skills() {
             Familiar with
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['TensorFlow', 'NumPy', 'Pandas', 'MQTT', 'RS-485', 'GitLab', 'OOP', 'Data Structures', 'ML Algorithms'].map(t => (
+            {['TensorFlow', 'NumPy', 'Pandas', 'MQTT', 'RS-485', 'Git', 'OOP', 'ML Algorithms'].map(t => (
               <span
                 key={t}
                 className="px-3 py-1.5 rounded-lg glass text-sm text-slate-400 border border-white/10
